@@ -14,7 +14,7 @@ val DEFAULT_PORTS = setOf(
     80, // HTTP
     443, // HTTPS
     4443, 8000, 8080, 8443, 8888, 9000 // Common local dev/testing ports
-)
+).plus(31000..33000).toSet()
 
 const val MIN_PORT = 1
 const val MAX_PORT = 65535
